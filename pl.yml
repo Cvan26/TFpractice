@@ -1,0 +1,10 @@
+---
+- name: first playbook of mine
+  become: yes
+  hosts: tests
+  tasks: 
+  - name: nginx installation
+    apt:
+      name: nginx
+      state: present
+    
